@@ -186,7 +186,7 @@ export default async function ProjectsPage() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
         {publicProjects.map((project, index)=> (
-             <Card>
+             <Card key={index}>
              <a href={project.url} target="_blank">
                <article className="relative w-full h-full p-4 md:p-8">
                  <div className="flex items-center justify-between gap-2">
