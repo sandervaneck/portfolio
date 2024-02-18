@@ -1,29 +1,10 @@
 "use client";
-import { Github, GithubIcon, LinkedinIcon, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/Nav";
 import { Card } from "../components/Card";
+import { socials } from "../components/constants";
 
-const socials = [
-	{
-		icon: <LinkedinIcon size={20} />,
-		href: "https://nl.linkedin.com/in/sander-van-eck-826681178",
-		label: "LinkedIn",
-		handle: "@sander-van-eck",
-	},
-	{
-		icon: <Mail size={20} />,
-		href: "mailto:sandervaneck@outlook.com",
-		label: "Email",
-		handle: "sandervaneck@outlook.com",
-	},
-	{
-		icon: <GithubIcon size={20} />,
-		href: "https://github.com/sandervaneck",
-		label: "Github",
-		handle: "sanervaneck",
-	},
-];
+
 
 export default function Example() {
 	return (

@@ -1,3 +1,17 @@
+import { LinkedinIcon, Mail, GithubIcon } from "lucide-react"
+
+export const MyName = "Sander van Eck"
+export const MyPosition = "Actuary, Software Developer and Entrepeneur"
+export const MyPurpose = "Ready to help you with Software-, Machine Learning or Ecommerce services."
+export const MySecondPurpose = () => {
+
+  return (
+    <>
+          Also, feel free to take a course on my 
+              <a href="www.udemy.com" target="_blank"> Udemy Page</a>
+            </>
+  )
+}
 
 export type Project = {
     name: string,
@@ -60,3 +74,25 @@ export const privateProjects: Project[] = [MyChefsbase, EquisMate, MyCourses]
 export const publicProjects: Project[] = [ChatGPT, Webshop, StockPredictor]
 
 export const revalidate = 60;
+
+
+export const socials = [
+	{
+		icon: <LinkedinIcon size={20} />,
+		href: "https://nl.linkedin.com/in/sander-van-eck-826681178",
+		label: "LinkedIn",
+		handle: "@sander-van-eck",
+	},
+	{
+		icon: <Mail size={20} />,
+		href: "mailto:sandervaneck@outlook.com",
+		label: "Email",
+		handle: "sandervaneck@outlook.com",
+	},
+	{
+		icon: <GithubIcon size={20} />,
+		href: "https://github.com/sandervaneck",
+		label: "Github",
+		handle: "sandervaneck",
+	},
+];
